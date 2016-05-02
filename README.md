@@ -135,7 +135,11 @@ The directory structure of experiments are tend to be quite self-explanatory, bu
 
 ## References
 [1] Arvind Narayanan, Vitaly Shmatikov: De-anonymizing Social Networks. IEEE Security and Privacy 2009. [[pdf]](http://33bits.org/2009/03/19/de-anonymizing-social-networks/)
+
 [2] Wei Peng, Feng Li, Xukai Zou, Jie Wu: Seed and Grow: An attack against anonymized social networks. SECON 2012.
+
 [3] Benedek Simon, Gabor Gyorgy Gulyas, Sandor Imre: Analysis of Grasshopper, a Novel Social Network De-anonymization Algorithm. Journal of Periodica Polytechnica Electrical Engineering and Computer Science, Volume 58, Number 4, 2014. [[pdf]](www.pp.bme.hu/eecs/article/download/7878/6648)
+
 [4] Gabor Gyorgy Gulyas, Sandor Imre: Measuring Importance of Seeding for Structural De-anonymization Attacks in Social Networks. SESOC 2014. [[pdf]](http://gulyas.info/upload/GulyasG_SESOC14.pdf)
+
 [5] Gabor Gyorgy Gulyas, Sandor Imre: Using Identity Separation Against De-anonymization of Social Networks. ransactions on Data Privacy 8:2 (2015), pp. 113 - 140 [[pdf]](http://www.tdp.cat/issues11/tdp.a180a14.pdf)
