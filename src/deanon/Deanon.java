@@ -657,7 +657,7 @@ public class Deanon
 					log("\t\t\tnode overlap: "+common_vertices.size());
 				}
 			}
-			if(args[5].equals("sample"))
+			else if(args[5].equals("sample"))
 			{
 				for(int j = 0; j < Integer.parseInt(args[6]); j++)
 				{
