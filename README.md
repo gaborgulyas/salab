@@ -43,6 +43,7 @@ Creates a dataset with the given parameters for experimenting. Perturbation prov
 - `PERTURBATION_ALGO`: the algorithm that could be used for perturbation. Possible choices:
 	- `ns09`, `dns09`: Detailed in [1], non-directed and directed versions. Most realistic, thus recommended to use.
     - `sng`: Detailed in [2], it solely exists in the framework for scientific purposes. Not realistic, not recommended to use in experiments.
+    - `sample`: samples edges with probability `s`, leaves nodes intact. Used in multiple publications, e.g., [6-8]
     - `copyfirst`: this could be used for making copies if there is already one perturbation existing for an experiment.
     - `clone`: clones the source graph.
 - `NUMBER_OF_PERTURBATIONS`: number of perturbations.
@@ -149,3 +150,11 @@ The directory structure of experiments are tend to be quite self-explanatory, bu
 [4] Gabor Gyorgy Gulyas, Sandor Imre: Measuring Importance of Seeding for Structural De-anonymization Attacks in Social Networks. SESOC 2014. [[pdf]](http://gulyas.info/upload/GulyasG_SESOC14.pdf)
 
 [5] Gabor Gyorgy Gulyas, Sandor Imre: Using Identity Separation Against De-anonymization of Social Networks. ransactions on Data Privacy 8:2 (2015), pp. 113 - 140 [[pdf]](http://www.tdp.cat/issues11/tdp.a180a14.pdf)
+
+[6] Shouling Ji, Weiqing Li, Prateek Mittal, Xin Hu, Raheem Beyah: SecGraph: A Uniform and Open-source Evaluation System for Graph Data Anonymization and De-anonymization. Usenix Security 2015.
+
+[7] Yartseva, Lyudmila, Matthias Grossglauser: On the performance of percolation graph matching. Proceedings of the first ACM conference on Online social networks. ACM, 2013.
+
+[8] Pedram Pedarsani, Daniel R. Figueiredo, Matthias Grossglauser: A Bayesian method for matching two similar graphs without seeds. 51st Annual Allerton Conference on Communication, Control, and Computing, Monticello, IL, 2013.
+
+
