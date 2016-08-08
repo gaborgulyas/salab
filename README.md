@@ -43,7 +43,7 @@ Creates a dataset with the given parameters for experimenting. Perturbation prov
 - `PERTURBATION_ALGO`: the algorithm that could be used for perturbation. Possible choices:
 	- `ns09`, `dns09`: Detailed in [1], non-directed and directed versions. Most realistic, thus recommended to use.
     - `sng`: Detailed in [2], it solely exists in the framework for scientific purposes. Not realistic, not recommended to use in experiments.
-    - `sample`: samples edges with probability `s`, leaves nodes intact. Used in multiple publications, e.g., [6-8]
+    - `sample`: samples nodes and edges with the probabilities set as parameters (`s_n` and `s_v`). In literature, `s_n=1.0` was used, sampling edges, but leaving nodes intact, e.g.: [6-8]
     - `copyfirst`: this could be used for making copies if there is already one perturbation existing for an experiment.
     - `clone`: clones the source graph.
 - `NUMBER_OF_PERTURBATIONS`: number of perturbations.
