@@ -69,6 +69,7 @@ Runs a re-identification attack on an existing dataset.
     - `ns09`: De-anonymization algorithm as described in [1], but implemented in an undirected fashion.
     - `dns09`: De-anonymization algorithm as described in [1].
     - `grh`: Grasshopper de-anonymizaton algorithm as described in [3].
+    - `blb`: our Bumblebee de-anonymization algorithm [9].
     - `sng`: Seed-and-grow algorithm as described in [2].
 - `NUMBER_OF_ROUNDS`: number of re-identification rounds could be set. Helpful, if results vary for the given perturbation setting.
 - `SEED_TYPE`: artifical seeding based on different characteristics of nodes. To understand differences better, you can read [4].
@@ -82,7 +83,7 @@ Runs a re-identification attack on an existing dataset.
     - `lcch.R`: same as before. The only difference is that this restricts LCC to top 20% before filtering with degree.
     - `random.R`: randomly selected nodes, that could be filtered by degree (have to set R).
 - `SEED_SIZE`: number of seed nodes.
-- `DEANON_PARAMETERS`: depends on the algo, but for ns09 and grh you can the theta parameter here. Algo sng does not take such extra parameters.
+- `DEANON_PARAMETERS`: depends on the algo, but for ns09 and grh you can the theta parameter here (e.g., adding a single float value as `0.01`). The blb algorithm takes the theta and delta here as a comma separated float list (e.g., `0.1,0.5`; this will do $\theta=0.1$ amd $\delta=0.5$). The sng does not take such extra parameters.
 
 #### Example
     simulate epinions -1 "first_experiment" ns09 3 random.25 1000 0.01
@@ -157,4 +158,5 @@ The directory structure of experiments are tend to be quite self-explanatory, bu
 
 [8] Pedram Pedarsani, Daniel R. Figueiredo, Matthias Grossglauser: A Bayesian method for matching two similar graphs without seeds. 51st Annual Allerton Conference on Communication, Control, and Computing, Monticello, IL, 2013.
 
+[9] Gabor Gyorgy Gulyas, Benedek Simon, Sandor Imre: An Efficient and Robust Social Network De-anonymization Attack. In Proc. of the Workshop on Privacy in the Electronic Society (WPES'16), held in conjunction with the ACM CCS'16.
 
